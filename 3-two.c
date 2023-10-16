@@ -22,7 +22,7 @@ int print_oct(va_list val)
 	cont++;
 	arr = malloc(sizeof(int) * cont);
 	if (arr == NULL)
-		return (NULL);
+		return (0);
 			for (i = 0; i < cont; i++)
 			{
 				arr[i] = temp % 8;

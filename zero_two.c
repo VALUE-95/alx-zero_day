@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * printf_string - prints a string.
@@ -9,11 +10,12 @@
 
 int printf_string(va_list val)
 {
-	char str;
+	char *str;
 	int i;
 	int length;
 
 	str = va_arg(val, char *);
+
 	if (str == NULL)
 	{
 		str = "(null)";
@@ -22,7 +24,6 @@ int printf_string(va_list val)
 			_putchar(str[i]);
 		return (length);
 	}
-
 	else
 	{
 		length = str_len(str);

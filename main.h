@@ -1,4 +1,4 @@
-#ifndef MIIN_H
+#ifndef MAIN_H
 #define MAIN_H
 #include <stdlib.h>
 #include <stdio.h>
@@ -6,10 +6,10 @@
 #include <limits.h>
 #include <stdarg.h>
 
-typedef struct form
+typedef struct format
 {
 	char * iden;
-	int (*f)()
+	int (*f)();
 } match;
 int _printf(const char *format, ...);
 int _putchar(char c);

@@ -10,7 +10,7 @@
 int print_ex_str(va_list val)
 {
 	char *s;
-	int i, lin = 0;
+	int i, len = 0;
 	int VALUE;
 
 	s = va_arg(val, char *);
@@ -35,8 +35,8 @@ int print_ex_str(va_list val)
 		{
 
 			_putchar(s[i]);
-			len++
+			len++;
 		}
 	}
-	return (len)
+	return (len);
 }

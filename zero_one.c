@@ -1,7 +1,5 @@
 #ifndef MAIN_H
 #include "main.h"
-#ifndef MAIN_H
-#include "main.h"
 
 /**
  * printf_char - prints a char.
@@ -17,3 +15,4 @@ int printf_char(va_list val)
 	_putchar(str);
 	return (1);
 }
+#endif
